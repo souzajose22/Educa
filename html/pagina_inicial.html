@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- o link serve para vincular o html com o css-->
+    <link rel="stylesheet" href="../css/pagina_inicial.css">
+    <title>Educa ++ | Cursos Online</title>
+</head>
+
+<body>
+    <!-- header serve para agrupar-->
+    <header>
+        <h1>EDUCA++</h1>
+    </header>
+    <figure id="img_capa">
+        <img src="../imagens/capa.jpg" alt="Imagem de capa com um notebook">
+    </figure>
+    <!-- Div serve para fazer agrupamentos-->
+    <div id="disciplinas">
+        <h1>Disciplinas</h1>
+        <table>
+            <tbody>
+                <tr class="corA">
+                    <td>
+                        <h2>Algoritmos I</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et velit ultrices, faucibus justo
+                        commodo,volutpat elit. Maecenas ullamcorper lectus id felis finibus, at luctus lacus dignissim.
+                    </p>
+                    </td>
+                </tr>
+                <tr class="corB">
+                    <td>
+                        <h2>Algoritmos II</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et velit ultrices, faucibus justo
+                        commodo,volutpat elit. Maecenas ullamcorper lectus id felis finibus, at luctus lacus dignissim.
+                    </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contato">
+        <h1>Entre em contato</h1>
+        <form action="pagina_inicial.html" method="post">
+            <fieldset>
+                <legend>Dados para contato: </legend>
+                <label for="nome">Nome: </label><br>
+                <input type="text" id="nome" name="nome" placeholder="Coloque o seu nome">
+                <br>
+                <label for="assunto">Assunto:</label><br>
+                <select name="assunto" id="assunto">
+                    <option value="">Selecione um opção</option>
+                    <option value="duvida">Enviar uma dúvida</option>
+                    <option value="sugestao">Enviar uma sugestão</option>
+                    <option value="erro">Reportar um erro</option>
+                </select>
+                <br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
